@@ -7,4 +7,10 @@ const body = document.querySelector("body"),
 
     toggle.addEventListener("click", () => {
         sidebar.classList.toggle("close");
+
+        if(body.classList.contains("dark")){
+            modeText.inenerText ="Light Mode"
+        }else(
+            modeText.inenerText ="Dark Mode"
+        )
     }); 
