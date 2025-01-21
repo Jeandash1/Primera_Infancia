@@ -152,7 +152,16 @@ main{
 
 /*      FOOTER      */
 
-footer {
+.footer {
     background: #212529;
     color: aliceblue;
+}
+
+.footer form{
+    border: none;
+    border-radius: 5px;
+}
+
+.footer form .button{
+    
 }
