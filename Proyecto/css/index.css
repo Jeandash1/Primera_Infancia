@@ -152,7 +152,21 @@ main{
 
 /*      FOOTER      */
 
-footer {
+.footer {
     background: #212529;
     color: aliceblue;
+}
+
+.footer form{
+    margin-bottom: 10px;
+    max-width: 40px;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer form,
+.footer .col{
+    flex: 1;
+    margin: 5px;
 }
