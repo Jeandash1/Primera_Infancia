@@ -10,10 +10,9 @@
     --header-height-difference: calc(
             var(--header-outer-height) - var(--header-inner-height)
     );
-    --header-color: #c5dcf2 ;
-
+    
     /* COLORES */
-
+    --header-color: #c5dcf2;
     --second-color: #92b8e5;
     --text-color-light: #ffffff;
     --text-color-dark: #000000;
@@ -154,20 +153,31 @@ main{
 
 .footer {
     background: #212529;
-    color: aliceblue;
+    color: var(--text-color-light);
+    padding: 0;
+    margin: 0;
 }
 
-.footer form{
+.footer-section li{
+    list-style: none;
+    margin-bottom: 5px;
+    
+}
+
+.contact-form{
     margin-bottom: 10px;
-    max-width: 40px;
-    margin: 0;
+    margin: 20px auto;
+    margin-left: 10px;
+    max-width: 200px;
     border: none;
     border-radius: 5px;
+    gap: 80px;
+    
 }
 
 .footer form,
 .footer .col{
     flex: 1;
-    margin: 5px;
+    margin: 6px;
 }
 
