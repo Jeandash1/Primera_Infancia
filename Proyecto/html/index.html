@@ -13,22 +13,49 @@
 <header class="header-outer">
     <div class="header-inner responsive-wrapper">
         <div class="header-logo">
-            <img src="" alt="">
+            <img src="img/logo.png" alt="">
         </div>
         <nav class="header-navigation">
             <a href=""><i class="bi bi-house-fill"></i> Inicio</a>
-            <a href=""><i class="bi bi-house-fill"></i> Inicio</a>
-            <a href=""><i class="bi bi-house-fill"></i> Inicio</a>
-            <a href=""><i class="bi bi-house-fill"></i> Inicio</a>
+            <a href=""><i class="bi bi-clipboard-fill"></i> Contenido</a>
             <a href="#footer"><i class="bi bi-person-lines-fill"></i> Sobre nosotros</a>
-            <a href=""><i class="bi bi-box-arrow-in-right"></i> Ingresar</a>
+            <a href="registro.html"><i class="bi bi-box-arrow-in-right"></i> Ingresar</a>
             <button> <i class="bi bi-list"></i>  </button>
         </nav>
     </div>
-
 </header>
 <body>
     <div class="container">
+        <!--<div class="img-responsive"> -->
+            <!-- <img src="img/tradicionalG.jpg" class="img-fluid" alt=""> -->
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/fondo-azul.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/fondo-azul.jpg" id="Slide 2" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/fondo-azul.jpg" id="Slide 3" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        <!--</div>-->
         <div class="row">
             <div class="col-12">
                 <h1>¡Bienvenidos a Cursos para primera infancia!</h1>
@@ -77,6 +104,9 @@
             </div>
         </div>
         <div class="row">
+            <img src="" alt="" class="img-interactive">
+        </div>
+        <div class="row">
             <div class="col-12">
                 <p>En este sitio web encontrarás una variedad de cursos y recursos educativos 
                     para el cuidado y educación de niños y niñas en la primera infancia. Los cursos están diseñados para 
@@ -97,17 +127,25 @@
             </div>
         </div>
     </div>
-    <footer class="row align-items-end footer" id="footer">
+    <footer class="footer" id="footer">
         <div class="col footer-section">
-            <p>Informacion Y contacto</p>
-            <ul>
-                <li>© 2024 Cursos para primera infancia. Todos los derechos reservados.</li>
+            <ul>                
                 <li>Celular: 3212343565</li>
+                <li>Correo: <a href="#"> julianalopez730@gmail.com </a> </li>
+                <li>Horario de atención: Luens a viernes de 8:00 AM a 5:00 PM</li>
+                <li>© 2024 Cursos para primera infancia. Todos los derechos reservados.</li>
             </ul>
         </div>
         <div class="col footer-section">
-            este es otro lado donde se podran poner en contacto con la persona encargada
-            de la pagina para mas informacion, de igual manera pueden dejar su contacto:
+            Redes Sociales:
+            <div class="footer-icons">
+                <i class="bi bi-facebook"><a  class="footer-icon" href="#"></a></i>
+                <i class="bi bi-instagram"><a href="#"></a></i>
+                <i class="bi bi-youtube"><a href="#"></a></i>
+            </div>
+        </div>
+        <div class="col footer-section">
+            Envianos tu contacto:
             <form class="contact-form" action="">
                 <input class="form-control" type="text" placeholder="Nombre">
                 <input class="form-control" type="email" placeholder="Correo">
