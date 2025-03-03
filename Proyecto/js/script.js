@@ -13,4 +13,4 @@ const body = document.querySelector("body"),
         }else(
             modeText.inenerText ="Dark Mode"
         )
-    }); 
+    });

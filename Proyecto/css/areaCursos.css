@@ -13,6 +13,9 @@
             var(--header-outer-height) - var(--header-inner-height)
     );
 
+    --tran-3: all 0.2s ease;
+    --tran-4: all 0.4s ease;
+
     /*      COLORES     */
     --header-color: #c5dcf2;
     --primary-color: #ffffff;
@@ -35,7 +38,7 @@
 .header-outer{
     height: var(--header-outer-height);
     position: sticky;
-    top: calc(var(--header-height-difference) * -1);
+    top: 0; /*calc(var(--header-height-difference) * -1);*/
     display: flex;
     align-items: center;
     background: var(--header-color);
@@ -128,20 +131,52 @@
     padding: 20px;
 }
 
+.sidebar.close{
+    width: 110px;
+}
+
+.sidebar .text{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--negro);
+    transition: var(--tran-3);
+    white-space: nowrap;
+    opacity: 1;
+}
+  
+.sidebar.close .text{
+    opacity: 0; 
+}
+  
+.sidebar .close ul{
+    opacity: 0; 
+}
+
 .sidebar {
     position: fixed;
     width: 250px;
     height: 100vh;
     background: #f8f9fa;
-    padding: 20px;
+    padding: 10px 14px;
     border-right: 2px solid #ddd;
+    transition: var(--tran-4);
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
-.sidebar h3 {
+.sidebar h3 .text{
+    display: flex;
     margin-bottom: 15px;
+    font-size: 25px;
 }
 
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+}
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -151,10 +186,11 @@
     margin: 10px 0;
 }
 
-.sidebar ul li a {
+.sidebar li a {
+
     text-decoration: none;
     color: #333;
-    display: block;
+    display: flex;
     padding: 8px;
     border-radius: 5px;
     transition: background 0.3s;
@@ -165,19 +201,21 @@
     color: white;
 }
 
-.sidebar i{
+.sidebar .toggle{
     position: absolute;
     top: 0%;
     right: 10px;
-    font-size: 20px;
+    font-size: 22px;
+    display: flex;
+    transform: translateY(50%) rotate(90deg);
+    transition: var(--tran-3);
 }
 
-.sidebar i:hover{
+.sidebar .toggle:hover{
     cursor: pointer;
     background: var(--grid-color);
-    border-radius: 50%;
+    border-radius: 60%;
     align-items: center;
-    /*transform: translateY(50%) rotate(90deg);*/ /*rotar icono*/
 }
 
 .main-content {    
