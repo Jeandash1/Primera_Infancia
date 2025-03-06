@@ -195,6 +195,10 @@ header .image-text .header-text{
   padding: 8px 40px;
 }
 
+.home .content-home{
+  padding: 8px 40px;
+}
+
 .sidebar.home{
   height: 100vh;
   width: calc(100%  88px);

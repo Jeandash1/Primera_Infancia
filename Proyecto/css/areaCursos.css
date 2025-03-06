@@ -218,6 +218,10 @@
     align-items: center;
 }
 
+.sidebar li a:hover{
+    border-radius: 5px;
+}
+
 .main-content {    
     background: white;
     padding: 20px;

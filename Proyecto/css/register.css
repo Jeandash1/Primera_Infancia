@@ -23,3 +23,13 @@ body {
 .tab-content {
   margin-top: 20px; /* Espaciado entre pestañas y contenido */
 }
+
+.btn a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn a:hover{
+  color: #fff;
+  text-decoration: none;
+}
